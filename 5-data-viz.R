@@ -15,6 +15,7 @@ rates %>%
        y = "Optimal Decision",
        title = "Confusion Matrix on Punt Return Decision Making",
        subtitle = "Returnable punts from 2018 to 2020 included")
+ggsave('matrix.png', width = 14, height = 10, dpi = "retina")
 
 player_ids <- players %>%
   select(player = displayName, nflId)
